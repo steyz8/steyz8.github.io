@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css.css">
+    <meta name="keywords" content="CV,home,page,Anastazija">
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+<div id="menubar">
+    <h2><a href="home.html"><img id="logo" src="images/logo1.png"></a></h2>
+    <div id="menu">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+</div>
+<div id="main">
+    <div id="top">
+        <img  src="images/ok.jpg">
+    </div>
+    <div id="education">
+        <img id="slikica" src="images/mortarboard.png">
+        <h2>EDUCATION</h2>
+        <br>
+        <h3>HighSchool</h3>
+    <p>
+        <img class="calendar" src="images/calendar.png">
+       2016-2020
+        <img class="location" src="images/location.png">
+        Orce Nikolov, Skopje, Macedonia
+    </p>
+        <br>
+        <h3>University</h3>
+        <p>
+            <img class="calendar" src="images/calendar.png">
+            <span>2020-now</span>
+            <img class="location" src="images/location.png">
+            Faculty of Computer Science and <span>Engineering, Skopje, Macedonia</span>
+        </p>
+    </div>
+    <div id="work">
+    <img id="slikica2" src="images/briefcase.png">
+        <h2>WORK EXPERIENCE</h2>
+        <h3>Seasonal worker</h3>
+       <p>
+           <img class="calendar" src="images/calendar.png">
+           2017-now
+           <img class="location" src="images/location.png">
+           "ASHAYA" Grooming salon<br>
+           <span>Skopje, Macedonia</span>
+       </p>
+        <h3>Freelance (Video editing)</h3>
+        <p>
+            <img class="calendar" src="images/calendar.png">
+            2017-2021
+        </p>
+
+    </div>
+    <div id="down">
+        <p>DOWNLOAD CV</p>
+        <a href="images/Анастазија%20Ковачевиќ%20CV..pdf" download="CV">
+             <img src="images/download.png">
+        </a>
+    </div>
+
+    <div id="slideshow">
+        <img class="mySlides" src="images/rabota12.jpg">
+        <img class="mySlides" src="images/rabota3.jpg">
+        <img class="mySlides" src="images/rabota2.jpg">
+        <img class="mySlides" src="images/rabota4.jpg">
+
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+    </div>
+</div>
+<div id="footer">
+    <p id="copyright">
+        ©Copyright Anastazija Kovachevikj
+    </p>
+</div>
+
+</body>
+</html>
